@@ -5,30 +5,33 @@
 }
 
 h1 {
+  font-family: "Times New Roman", Georgia, Serif;
   margin-bottom: 15px;
   text-align: center;
 }
 
+
 h3 {
-  float: right;
-  clear: both;
+  font-family: "Times New Roman", Georgia, Serif;
+  position: absolute;
+  top: -1px;
+  right: -1px;
   width: 150px;
   padding-top: 4px;
   padding-bottom: 4px;
-  margin-top: -2px;
-  margin-right: -2px;
   margin-bottom: 10px;
   text-align: center;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
-
 p {
+  font-family: "Times New Roman", Georgia, Serif;
+  position: relative;
+  padding-top: 25px;
   text-align: justify;
   width: 94%;
   margin: 3%;
   font-size: 120%;
-  clear: both;
   margin-right: auto;
   margin-left: auto;
   color: black;
@@ -50,19 +53,20 @@ h3.beef {
 	background-color: #E5D198;	
 }
 
-
-/* Simple Responsive Framework. */
 .row {
+  position: absolute;
   width: 100%;
 }
 
+#col1, #col2, #col3 {
+  position: relative;
+  background-color: #999999;
+  border: 1px solid black;
+}
 
 /********** Small devices only ***********/
 @media (max-width: 767px) {
-	#col1, #col2, #col3 {
-  		clear: both;
-		background-color: #999999;
-		border: 2px solid black;
+	#col1, #col2, #col3 { 	
 		width: 90%;
 		margin-left: 5%;
 		margin-right: 5%;
@@ -73,18 +77,14 @@ h3.beef {
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   #col1 {
-  	background-color: #999999;
-  	border: 2px solid black;
-  	float: left;
+    float: left;
     width: 46.25%;
     margin-bottom: 20px;
     margin-left: 2.5%;
     margin-right: 1.25%;
   }
   #col2 {
-  	background-color: #999999;
-  	border: 2px solid black;
-  	float: left;
+    float: left;
     width: 46.25%;
     margin-bottom: 20px;
     margin-left: 1.25%;
@@ -92,9 +92,7 @@ h3.beef {
   }
 
   #col3 {
-  	background-color: #999999;
-  	border: 2px solid black;
-  	clear: both;
+    clear: both;
     width: 95%;
     margin-left: 2.5%;
     margin-right: 2.5%;
@@ -103,15 +101,13 @@ h3.beef {
 
   p#p3 {
   	width: 97%;
-	margin: 1.5%;
+	  margin: 1.5%;
   }
 }
 /********** Large devices only **********/
 @media (min-width: 992px) {
   #col1, #col2, #col3 {
-  	background-color: #999999;
-  	float: left;
-    border: 2px solid black;
+    float: left;
     width: 31.33%;
     margin: 1%;
   }
