@@ -1,0 +1,61 @@
+body {
+  background-color: #48e529;
+  /*navbar has 40px height therefore the body has to be moved down*/
+  padding-top: 40px;
+}
+
+section p {
+  text-align: justify;
+}
+
+.content {
+  background-color: #cccccc;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* NAVIGATION BAR */
+
+#header-nav {
+  background-color: #aaa;
+  height: 40px;
+  border-bottom: 1px solid #777 ; 
+}
+
+.navbar-brand h1 {
+  color: #000;
+  font-size: 1.5em;
+  font-weight: bold;
+  /* 5 padding plus 5 margin for content*/
+  margin: 0 0 0 -10px;
+  /*margin: 0;*/
+}
+.navbar-header button.navbar-toggle
+{
+  /* 5 margin for content*/
+  margin-right: 5px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+  border: 1px solid #000;
+  background-color: #00cccc;
+}
+
+#nav-list {
+  margin-top: 10px;
+  background-color: #aaa;
+  margin-top: 0;
+  border-bottom: 1px solid #777;
+}
+
+#nav-list a {
+  color: #000;
+  text-align: center;
+  border-top: 1px solid #777;
+}
+/* END NAVIGATION BAR */
+/*
+.col-md-4
+{
+  padding-right: 5px;
+  padding-left: 5px
+}*/
